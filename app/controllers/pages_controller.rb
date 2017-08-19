@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @articles = Article.all
+    @articles = Article.last(5)
   end
 
   def contact
