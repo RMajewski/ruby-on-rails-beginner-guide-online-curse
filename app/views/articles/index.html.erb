@@ -3,6 +3,7 @@
 <div class="row">
   <!-- Blog article Content Column -->
   <div class="col-lg-8">
+    <%= will_paginate @articles %>
     <% @articles.each do |article| %>
       <!-- Blog article -->
       
@@ -16,7 +17,7 @@
         <span class="glyphicon glyphicon-time"></span>
       </p>
       
-      <!-- Authro -->
+      <!-- Author -->
       <p>
         Article By: <strong><%= article.user.username %></strong>
       </p>
